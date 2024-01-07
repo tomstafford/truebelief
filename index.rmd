@@ -38,9 +38,10 @@ One strategy might be to identify a third variable which is randomly distributed
 I was asking about casual identification at the NYE party (yes, that's how I roll), and K. suggested that age might be a good quasi-random variable to help with identification in this domain. Covid is famously more dangerous the older you are, so age should predict intention to get vaccinated, but maybe it is unrelated to conspiracy beliefs about the vaccine (you could argue it either way - there is some evidence that older people are more vulnerable to fake news, but also younger people are maybe more online, so might get more exposure to conspiracies). For the sake of argument, let's assume that age effects intention to get vaccinated, but not conspiracy beliefs.
 
 This gives us three variables
+
  * **A**ge
  * **V**accine intention
- * **C**conspiracy belief
+ * **C**onspiracy belief
  
 And so two models.
 
@@ -77,9 +78,10 @@ sim_dat <- sim_from_dag(dag, n_sim=1000)
 ```
 
 Here are plots, from left to right
-* Vaccine Intention and Age scatterplot - strong correlation (as defined)
-* Age and Conspiracy Belief scatterplot - no correlation
-* Conspiracy Belief and Vaccine Intention scatterplot - strong correlation (as defined), and NOTE higher correlation between Conspiracy and Vaccine intention is also there for high and low age individuals (with a parallel shift due to age, you can see the high age points are distributed over the full range of both variables, but shifted right)
+
+ * Vaccine Intention and Age scatterplot - strong correlation (as defined)
+ * Age and Conspiracy Belief scatterplot - no correlation
+ * Conspiracy Belief and Vaccine Intention scatterplot - strong correlation (as defined), and NOTE higher correlation between Conspiracy and Vaccine intention is also there for high and low age individuals (with a parallel shift due to age, you can see the high age points are distributed over the full range of both variables, but shifted right)
 
 <img src="true.png">
   

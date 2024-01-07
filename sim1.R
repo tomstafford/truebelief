@@ -20,7 +20,10 @@ library(simDAG)
 library(gridExtra)
 
 
-modelname='Expresive responding'
+#plot params
+labssizerel=1.5
+
+modelname='Expressive responding'
 
 if (modelname == 'Expressive responding'){
 
@@ -49,16 +52,28 @@ p <- ggplot(data=sim_dat,aes(x=con,y=int))
 p1 <- p + geom_point(color='red')
 
 p <- ggplot(data=sim_dat,aes(x=con,y=int,color=age))
-p2 <- p + geom_point() + labs(x = 'Conspiracy belief',y='Vaccine intention')
+p2 <- p + geom_point() + labs(x = 'Conspiracy belief',y='Vaccine intention') +
+  theme(axis.title.x = element_text(size = rel(labssizerel)),  # Increase the x-axis label font size
+        axis.title.y = element_text(size = rel(labssizerel)))  # Increase the y-axis label font size
+
 
 p <- ggplot(data=sim_dat,aes(x=int,y=age))
-p3 <- p + geom_point(color='green') + labs(x = 'Vaccine intention', y = 'Age')
+p3 <- p + geom_point(color='green') + labs(x = 'Vaccine intention', y = 'Age') +
+  theme(axis.title.x = element_text(size = rel(labssizerel)),  # Increase the x-axis label font size
+        axis.title.y = element_text(size = rel(labssizerel)))  # Increase the y-axis label font size
+
 
 p <- ggplot(data=sim_dat,aes(x=age,y=con))
-p4 <- p + geom_point(color='blue') + labs(x = 'Age', y = 'Conspiracy belief')
+p4 <- p + geom_point(color='blue') +
+  labs(x = 'Age', y = 'Conspiracy belief') +
+  theme(axis.title.x = element_text(size = rel(labssizerel)),  # Increase the x-axis label font size
+        axis.title.y = element_text(size = rel(labssizerel)))  # Increase the y-axis label font size
 
 
-plot_grid <- gridExtra::grid.arrange(p3, p4, p2, nrow = 1, top = modelname)
+
+plot_grid <- gridExtra::grid.arrange(p3, p4, p2, nrow = 1, 
+             top = grid::textGrob(modelname, gp = grid::gpar(fontface = "bold", fontsize = 14)))
+
 savename <-  paste0(tolower(substr(modelname, 1, 4)), ".png")
 ggsave(savename,plot= plot_grid,dpi=120,width=15, height=5)
 
