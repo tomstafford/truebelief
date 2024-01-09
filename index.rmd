@@ -12,11 +12,11 @@ knitr::opts_chunk$set(message = FALSE)
 
 ```
 
-*Showing my working on a problem of simple causal inference. I am aware that I lack the background on this to, so pointers welcome*
+*Showing my working on a problem of simple causal inference. I am aware that I lack the background on this, so pointers welcome*
 
 # Conspiracy theories and vaccine intentions
 
-With Indro Adinugroho, I've been thinking about conpiracy theories, and particularly conspiracy theories around the covid-19 vaccine. Obviously it matters if people belief in falsehoods, and it matters even more if these beliefs cause them to put themselves and others at risk by avoiding vaccination. 
+I've been thinking about conspiracy theories, and particularly conspiracy theories around the covid-19 vaccine. Obviously it matters if people believe in falsehoods, and it matters even more if these beliefs cause them to put themselves and others at risk by avoiding vaccination. 
 
 There is a clear negative correlation between intention to get vaccinated and endorsement of conspiracy theories about the vaccine. As with all correlations there is a problem of causal inference. Maybe the beliefs drive the intentions (let's call this the "true belief" model), which is what a rational actor model would predict. 
 
@@ -113,12 +113,28 @@ So here's the question:
 
 Given real data collected on Age, Vaccine Intention and Conspiracy Belief, how can I tell which causal model holds?
 
-In the real data (not shown) there is weak, but statistically significant, correlation between age and conspiracy belief. To the extent that I only consider the two causal m odels introduced here, can I take that as evidence of some non-zero component of expressive responding (i.e that the causal influence of age leaks through to conspiracy belief).
+In the real data (not shown) there is weak, but statistically significant, correlation between age and conspiracy belief. To the extent that I only consider the two causal models introduced here, can I take that as evidence of some non-zero component of expressive responding (i.e that the causal influence of age leaks through to conspiracy belief)?
 
 To some extent, just to be able to show evidence of non-zero expressive responding (that Vaccine Intention -> Conspiracy Beliefs) is a win. What's the best way to do this?
 
 Ideally, thought, I would like to be able to weigh the evidence for both models and come up with some relative strength for each, ie to be able to parameterise the extent to which the causal paths exist, or don't.
 
+## Update 2024-01-09
+
+K. was kind enough to recommend some reading
+
+>[Mastering 'Metrics: The Path from Cause to Effect](https://press.princeton.edu/books/paperback/9780691152844/mastering-metrics) - Joshua D. Angrist and Jörn-Steffen Pischke (2015) 
+
+>The Effect: An Introduction to Research Design and Causality Nick Huntington-Klein <https://theeffectbook.net>
+
+>Causal Inference: The Mixtape. Scott Cunningham
+<https://mixtape.scunning.com>
+
+And I feel I should mention
+
+>[The Book of Why: The New Science of Cause and Effect](https://en.wikipedia.org/wiki/The_Book_of_Why) (2018) Judea Pearl
+
+I read The Book of Why and it left me with a profound sense of the importance of causal graphs, but sadly not the necessary insight to answer the questions set out here
 
 # Colophon
 
