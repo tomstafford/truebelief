@@ -136,6 +136,13 @@ And I feel I should mention
 
 I read The Book of Why and it left me with a profound sense of the importance of causal graphs, but sadly not the necessary insight to answer the questions set out here
 
+
+# Update 2024-02-14
+
+I read this fantastic paper:
+
+> Klebel, T., & Traag, V. (2024, February 9). Introduction to causality in science studies. <https://doi.org/10.31235/osf.io/4bw9e>
+
 # Colophon
 
 Repo: <https://github.com/tomstafford/truebelief>
