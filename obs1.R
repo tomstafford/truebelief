@@ -112,6 +112,13 @@ summary(m1)
 # A -0.001 (p = 0.3)
 # V 0.39 (p<0.00001)
 
+################# --- substituting in T(rust) for V(accine belief)
+
+m0 <- lm(data = df, C ~ T) # not controlling for V
+summary(m0)
+
+# T -0.35 (p<0.0001)
+
 m1 <- lm(data = df, C ~ A + T) # controlling for V
 summary(m1)
 
