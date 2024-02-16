@@ -139,7 +139,7 @@ I read The Book of Why and it left me with a profound sense of the importance of
 
 # Update 2024-02-14
 
-I read this fantastic paper:
+This paper is really great:
 
 > Klebel, T., & Traag, V. (2024, February 9). Introduction to causality in science studies. <https://doi.org/10.31235/osf.io/4bw9e>
 
