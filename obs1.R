@@ -114,10 +114,6 @@ summary(m1)
 
 ################# --- substituting in T(rust) for V(accine belief)
 
-m0 <- lm(data = df, C ~ T) # not controlling for V
-summary(m0)
-
-# T -0.35 (p<0.0001)
 
 m1 <- lm(data = df, C ~ A + T) # controlling for V
 summary(m1)
@@ -126,3 +122,15 @@ summary(m1)
 # T -0.351 (p<0.0001)
 
 write_csv(df %>% select(V,A,C,T),'obsdat.csv')
+
+
+################### - testing for weak instrumebts
+
+# https://en.wikipedia.org/wiki/Instrumental_variables_estimation
+# "The strength of the instruments can be directly assessed because both the endogenous covariates and the instruments are observable.[20] A common rule of thumb for models with one endogenous regressor is: the F-statistic against the null that the excluded instruments are irrelevant in the first-stage regression should be larger than 10. "
+# Stock, J. H., Wright, J. H., & Yogo, M. (2002). A survey of weak instruments and weak identification in generalized method of moments. Journal of Business & Economic Statistics, 20(4), 518-529.
+
+m1 <- lm(data = df, C ~ V)
+m2 <- lm(data = df, C ~ V + A)
+anova(m1,m2) #F=1.002 so instrumental variable is weak
+# in normal language, understanding the age doesn't help undersand conspiracy beliefs

@@ -137,11 +137,15 @@ And I feel I should mention
 I read The Book of Why and it left me with a profound sense of the importance of causal graphs, but sadly not the necessary insight to answer the questions set out here
 
 
-# Update 2024-02-14
+## Update 2024-02-14
 
 This paper is really great:
 
 > Klebel, T., & Traag, V. (2024, February 9). Introduction to causality in science studies. <https://doi.org/10.31235/osf.io/4bw9e>
+
+## Update 2024-02-24
+
+JW pointed out that what I am describing is called [Instrumental variable analysis](inhttps://en.wikipedia.org/wiki/Instrumental_variables_estimation)
 
 # Colophon
 
