@@ -101,9 +101,10 @@ dag <- empty_dag() +
 ```
 
 Here are plots, from left to right
-* Vaccine Intention and Age scatterplot - strong correlation (as defined)
-* Age and Conspiracy Belief scatterplot - strong correlation (because Age -> Vaccine Intention and Vaccine Intention -> Conspiracy Belief)
-* Conspiracy Belief and Vaccine Intention scatterplot - strong correlation (as defined), but NOTE that the high age indivudals are now clustered in the top left of the distribution (high intention, low conspiracy belief)
+
+ * Vaccine Intention and Age scatterplot - strong correlation (as defined)
+ * Age and Conspiracy Belief scatterplot - strong correlation (because Age -> Vaccine Intention and Vaccine Intention -> Conspiracy Belief)
+ * Conspiracy Belief and Vaccine Intention scatterplot - strong correlation (as defined), but NOTE that the high age indivudals are now clustered in the top left of the distribution (high intention, low conspiracy belief)
 
 <img src="expr.png">
   
